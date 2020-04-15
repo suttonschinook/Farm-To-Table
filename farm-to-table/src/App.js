@@ -5,4 +5,4 @@ export default function App() {
 }
 
 //Hi, I'm trying to do this thing, it doesn't work
-// Git is dumb
+// Git is working now
