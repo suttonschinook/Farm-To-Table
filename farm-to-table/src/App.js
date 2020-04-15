@@ -1,5 +1,8 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
+import About from './Pages/About'
+import Recipes from './Pages/Recipes'
+import Home from './Pages/Home'
 
 export default function App() {
 	return (
