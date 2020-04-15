@@ -1,8 +1,12 @@
 import React from 'react'
+import { Route, Switch } from 'react-router-dom'
 
 export default function App() {
-	return <div></div>
+	return (
+		<div>
+			<Switch>
+				<Route path="/" component={Home} />
+			</Switch>
+		</div>
+	)
 }
-
-//Hi, I'm trying to do this thing, it doesn't work
-// Git is working now
