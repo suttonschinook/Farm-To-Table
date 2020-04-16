@@ -52,7 +52,7 @@ export default function Navbar() {
 			<StyledNav>
                 <Link to = "/">HOME</Link>
                 <Link to = "/about">ABOUT</Link>
-                <Link to = "/recipes">MUSIC</Link>
+                <Link to = "/recipes">RECIPES</Link>
             </StyledNav>
 		</div>
 	)
