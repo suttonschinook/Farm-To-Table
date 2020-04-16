@@ -2,7 +2,6 @@ import React from "react";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import Container from "react-bootstrap/Container";
 
-<<<<<<< HEAD
 export default function Header() {
   return (
     <Jumbotron fluid>
@@ -16,14 +15,3 @@ export default function Header() {
     </Jumbotron>
   );
 }
-=======
-export default function Header(){
-    return (
-        <div>
-            <Header>
-              <h1>FARM TO TABLE</h1>  
-            </Header>    
-        </div>
-    )
-}
->>>>>>> master
