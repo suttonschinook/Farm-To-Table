@@ -4,7 +4,7 @@ export default function Header(){
     return (
         <div>
             <Header>
-                Here is my Header
+              <h1>FARM TO TABLE</h1>  
             </Header>    
         </div>
     )
