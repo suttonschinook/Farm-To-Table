@@ -1,16 +1,16 @@
-import React from 'react'
-import Header from '../ReusableComponents/Header'
-import Navbar from '../ReusableComponents/Navbar'
-import Info from '../Content/Info'
-import Footer from '../ReusableComponents/Footer'
+import React from "react";
+import Header from "../ReusableComponents/Header";
+import BootstrapNav from "../ReusableComponents/BootstrapNav";
+import Info from "../Content/Info";
+import Footer from "../ReusableComponents/Footer";
 
 export default function About() {
-	return (
-		<div>
-			<Header />
-			<Navbar />
-			<Info />
-			<Footer />
-		</div>
-	)
+  return (
+    <div>
+      <BootstrapNav />
+      <Header />
+      <Info />
+      <Footer />
+    </div>
+  );
 }
