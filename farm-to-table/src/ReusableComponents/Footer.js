@@ -5,5 +5,5 @@ export default function Footer() {
     <div>
       <div>Here is my div</div>
     </div>
-  );
+  )
 }
