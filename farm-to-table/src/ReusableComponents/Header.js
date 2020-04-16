@@ -1,9 +1,11 @@
 import React from "react";
 
-export default function Header() {
-  return (
-    <div>
-      <div>Here is my div</div>
-    </div>
-  );
+export default function Header(){
+    return (
+        <div>
+            <Header>
+              <h1>FARM TO TABLE</h1>  
+            </Header>    
+        </div>
+    )
 }
