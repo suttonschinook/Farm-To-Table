@@ -1,16 +1,18 @@
-import React from 'react'
-import Header from '../ReusableComponents/Header'
-import Navbar from '../ReusableComponents/Navbar'
-import RecipeMain from '../Content/RecipeMain'
-import Footer from '../ReusableComponents/Footer'
+import React from "react";
+import { Link } from "react-router-dom";
 
-export default function Home() {
-	return (
-		<div>
-			<Header />
-			<Navbar />
-			<RecipeMain />
-			<Footer />
-		</div>
-	)
+export default function Recipe(props) {
+  return (
+    <div>
+      <div className="meal">
+        <Link to={`/${props.id}`}>
+          <img className="mealImg" src={props.image} alt="" />
+
+          <div className="meal-info">
+            <h1>{props.title}</h1>
+          </div>
+        </Link>
+      </div>
+    </div>
+  );
 }
