@@ -16,11 +16,18 @@ export default function BootstrapNav() {
   return (
     <>
       <Navbar bg="dark" variant="dark">
-        <Navbar.Brand to="/home">Farm To Table</Navbar.Brand>
+        <Navbar.Brand to="/home">
+          <img
+            alt=""
+            height="40px"
+            src="http://ourhealthylives.org/wp-content/uploads/2013/03/farm-box-768x512.png"
+          />
+        </Navbar.Brand>
         <Nav className="mr-auto">
           <StyledLink to="/">Home</StyledLink>
-          <StyledLink to="/about">About</StyledLink>
+          <StyledLink to="produce">Buy Produce</StyledLink>
           <StyledLink to="/recipes">Recipes</StyledLink>
+          <StyledLink to="/about">About</StyledLink>
         </Nav>
         <Form inline>
           <FormControl type="text" placeholder="Search" className="mr-sm-2" />
