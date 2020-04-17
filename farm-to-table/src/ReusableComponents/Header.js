@@ -3,6 +3,10 @@ import Jumbotron from "react-bootstrap/Jumbotron";
 import Container from "react-bootstrap/Container";
 import styled from "styled-components"
 
+const StyledContainer = styled.div`
+  height:15vh;
+`
+
 const StyledHeader = styled.h1`
   color:rgb(43, 42, 42);
   font-family:Georgia, 'Times New Roman', Times, serif;
@@ -16,19 +20,19 @@ color:rgb(43, 42, 42);
 font-family:Georgia, 'Times New Roman', Times, serif;
 font-size:20px;
 font-style:italic;
-height:5px;
+height:3px;
 margin-top:6%;
 `
 
 export default function Header() {
   return (
+    
     <Jumbotron fluid>
       <Container>
-        <StyledHeader>Farm to Table
-          {/* <h2 className = "farmer">A virtual farmers market experience</h2> */}
-        </StyledHeader>
+        <StyledHeader>Farm to Table</StyledHeader>
         <StyledFarmer>A virtual farmers market experience</StyledFarmer>
       </Container>
     </Jumbotron>
+    
   );
 }
