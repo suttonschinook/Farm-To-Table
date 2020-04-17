@@ -15,7 +15,7 @@ const StyledLink = styled(Link)`
 export default function BootstrapNav() {
   return (
     <>
-      <Navbar bg="primary" variant="dark">
+      <Navbar bg="dark" variant="dark">
         <Navbar.Brand to="/home">Farm To Table</Navbar.Brand>
         <Nav className="mr-auto">
           <StyledLink to="/">Home</StyledLink>
