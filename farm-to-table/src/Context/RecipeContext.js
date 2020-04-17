@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Recipe from "./Recipe";
+import Recipes from "../Pages/Recipes.js";
 
 export default function RecipeMain() {
   const [recipes, setRecipes] = useState([]);
@@ -52,7 +52,7 @@ export default function RecipeMain() {
       </div>
       <div className="meals">
         {recipes.map((recipe) => (
-          <Recipe
+          <Recipes
             key={recipe.idMeal}
             id={recipe.idMeal}
             title={recipe.strMeal}
