@@ -25,7 +25,7 @@ export default function BootstrapNav() {
         </Navbar.Brand>
         <Nav className="mr-auto">
           <StyledLink to="/">Home</StyledLink>
-          <StyledLink to="produce">Buy Produce</StyledLink>
+          <StyledLink to="/produce">Buy Produce</StyledLink>
           <StyledLink to="/recipes">Recipes</StyledLink>
           <StyledLink to="/about">About</StyledLink>
         </Nav>
