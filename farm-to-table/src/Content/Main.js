@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import Carousel from 'react-bootstrap/Carousel'
 import styled from "styled-components"
 
-// const Container = styled.div`
+const Container = styled.div`
 
-//   width:750px;
-//   margin-left:22%;
-// `
+  width:750px;
+  margin-left:22%;
+`
 
 export default function Main() {
 
@@ -18,7 +18,7 @@ export default function Main() {
     };
   
     return (
-     
+      <Container>
         <Carousel activeIndex={index} onSelect={handleSelect}>
           <Carousel.Item className = "slide1">
             <img
@@ -53,6 +53,7 @@ export default function Main() {
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
+      </Container> 
       
   );
 
