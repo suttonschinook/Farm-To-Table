@@ -6,17 +6,16 @@ const mongoose = require("mongoose");
 app.use(express.json());
 app.use(morgan("dev"));
 
-//Rewatch video and update....
-// mongoose.connect(
-//   "mongodb://localhost:27017/inventorydb",
-//   {
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true,
-//     useCreateIndex: true,
-//     useFindAndModify: false
-//   },
-//   () => console.log("Connected to the DB")
-// );
+mongoose.connect(
+  "mongodb://localhost:27017/producedb",
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: false,
+  },
+  () => console.log("Connected to the DB")
+);
 
 app.use("/produce", require("./routes/prodRouter"));
 
