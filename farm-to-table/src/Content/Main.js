@@ -56,20 +56,20 @@ export default function Main() {
       </Container> 
       
   );
+  }
+  return (
+    <div>
+      <ControlledCarousel />
+    </div>
+  );
+}
 
             
            
             
   
     
-  }
-  return (
-    <div>
-      {/* <Container> */}
-        <ControlledCarousel />
-      {/* </Container> */}
-    </div>
-  );
-}
+     
+     
   
   
