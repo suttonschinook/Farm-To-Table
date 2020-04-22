@@ -1,14 +1,17 @@
 import React from "react";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import Container from "react-bootstrap/Container";
-import styled from "styled-components"
-
+import styled from "styled-components";
 
 const StyledContainer = styled.div`
   height:40px;
 
+
 `
 const StyledHeader = styled.h1`
+
+  display: flex;
+  justify-content: center;
   color:rgb(43, 42, 42);
   font-family:'Roboto', sans-serif;
   font-size:70px;
@@ -27,9 +30,9 @@ margin-left:15%;
 
 `
 
+
 export default function Header() {
   return (
-    
     <Jumbotron fluid>
       <StyledContainer>
         <Container>
@@ -38,6 +41,5 @@ export default function Header() {
         </Container>
       </StyledContainer>
     </Jumbotron>
-    
   );
 }
