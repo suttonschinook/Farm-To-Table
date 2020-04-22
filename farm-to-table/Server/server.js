@@ -17,7 +17,7 @@ mongoose.connect(
   () => console.log("Connected to the DB")
 );
 
-app.use("/produce", require("./routes/prodRouter"));
+app.use("/produce", require("./routes/prodRouter.js"));
 
 app.use((err, req, res, next) => {
   console.log(err);
