@@ -96,19 +96,19 @@ export default function Footer() {
             <StyledFtTitle>About</StyledFtTitle>
             <StyledUl>
               <li>
-                <a href="#">Services</a>
+                <Link to="/">Home</Link>
               </li>
               <li>
-                <a href="#">Portfolio</a>
+                <Link to="/about">About</Link>
               </li>
               <li>
-                <a href="#">Pricing</a>
+                <Link to="/produce">Produce</Link>
               </li>
               <li>
-                <a href="#">Customers</a>
+                <Link to="/recipes">Recipes</Link>
               </li>
               <li>
-                <a href="#">Careers</a>
+                <Link to="/">Something Else</Link>
               </li>
             </StyledUl>
           </StyledFtMainItem>
