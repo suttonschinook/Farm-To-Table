@@ -44,7 +44,7 @@ prodRouter.delete("/:produceId", (req, res) => {
 });
 
 // Update
-inventoryRouter.put("/:produceId", (req, res, next) => {
+prodRouter.put("/:produceId", (req, res, next) => {
   Produce.findOneAndUpdate(
     { _id: req.params.produceId },
     req.body,
