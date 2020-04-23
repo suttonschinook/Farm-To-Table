@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 export const ProduceContext = React.createContext();
 const axios = require("axios");
 
@@ -9,7 +9,7 @@ export default function ProduceProvider(props) {
 
   function getProduce() {
     axios
-      .get("Put address for produce database here")
+      .get("//localhost:9000")
 
       .then((response) => {
         console.log(response);
