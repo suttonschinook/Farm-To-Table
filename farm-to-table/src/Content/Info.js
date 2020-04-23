@@ -17,7 +17,7 @@ export default function Info() {
 					Farm to Table is a place for people to connect with 
 					their local farmers and get involved in the community. 
 					Our farmers offer produce boxes which may vary based on
-					season and supply. 
+					season and supply. We 
 					
 	                           
 				</p>
