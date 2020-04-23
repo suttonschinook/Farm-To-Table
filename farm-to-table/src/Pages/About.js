@@ -5,12 +5,15 @@ import Info from "../Content/Info";
 import Footer from "../ReusableComponents/Footer";
 import styled from "styled-components"
 import Carousel from 'react-bootstrap/Carousel'
+import MyApp from '../Content/MyApp.js'
+
 
 const Container = styled.div`
 
   width:750px;
   margin-left:22%;
 `
+
 
 export default function About() {
 
@@ -67,6 +70,7 @@ export default function About() {
       <Header />
       <ControlledCarousel />
       <Info />
+      <MyApp/>
       <Footer />
     </div>
   );
