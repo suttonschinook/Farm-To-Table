@@ -5,18 +5,15 @@ import Info from "../Content/Info";
 import Footer from "../ReusableComponents/Footer";
 import styled from "styled-components"
 import Carousel from 'react-bootstrap/Carousel'
-import SimpleReactCalendar from 'simple-react-calendar'
+import MyApp from '../Content/MyApp.js'
+
 
 const Container = styled.div`
 
   width:750px;
   margin-left:22%;
 `
-const StyledGrid = styled.div`
-  display:grid;
-  grid-template-columns: repeat(7, 1fr);
 
-`
 
 export default function About() {
 
@@ -73,9 +70,7 @@ export default function About() {
       <Header />
       <ControlledCarousel />
       <Info />
-      <StyledGrid>
-        <SimpleReactCalendar activeMonth={new Date()} />
-      </StyledGrid>
+      <MyApp/>
       <Footer />
     </div>
   );
