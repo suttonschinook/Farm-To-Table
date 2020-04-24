@@ -4,17 +4,35 @@ const axios = require("axios");
 
 export default function ProduceProvider(props) {
   const [produceState, setProduceState] = useState({
-    produceAvailable: {},
+    produceAvailable: [
+      {
+        item: "Apples",
+        price: 3,
+        description:
+          "Who doesn't like fresh apples? If someone doesn't like apples they should not be trusted......",
+        img: "http://www.pngall.com/wp-content/uploads/2016/04/Apple-Fruit.png",
+      },
+      // {
+      //   item: "Apples",
+      //   price: 3,
+      //   description:
+      //     "Who doesn't like fresh apples? If someone doesn't like apples they should not be trusted......",
+      //   img: "http://www.pngall.com/wp-content/uploads/2016/04/Apple-Fruit.png",
+      // },
+      // {
+      //   item: "Apples",
+      //   price: 3,
+      //   description:
+      //     "Who doesn't like fresh apples? If someone doesn't like apples they should not be trusted......",
+      //   img: "http://www.pngall.com/wp-content/uploads/2016/04/Apple-Fruit.png",
+      // },
+    ],
   });
-
   function getProduce() {
-    axios
-      .get("//localhost:9000")
-
-      .then((response) => {
-        console.log(response);
-        setProduceState((prev) => ({ ...prev, produceAvailable: response }));
-      });
+    axios.get("/produce").then((response) => {
+      console.log(response);
+      setProduceState((prev) => ({ ...prev, produceAvailable: response.data }));
+    });
   }
 
   return (

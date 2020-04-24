@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from "react";
-import ProduceContext from "../Context/ProduceContext";
+import { ProduceContext } from "../Context/ProduceContext";
 import DisplayProduce from "../ReusableComponents/DisplayProduce";
 // import Card from "react-bootstrap/Card";
 // import CardDeck from "react-bootstrap/CardDeck";
@@ -14,7 +14,7 @@ const StyledProduce = styled.div`
 `;
 
 export default function BuyProduce() {
-  const getProduce = useContext(ProduceContext);
+  const { getProduce } = useContext(ProduceContext);
 
   useEffect(() => {
     getProduce();
