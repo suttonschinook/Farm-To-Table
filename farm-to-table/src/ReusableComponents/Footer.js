@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const StyledDiv = styled.div`
   display: flex;
-  flex: 1
+  flex: 1;
   min-height: 100vh;
   flex-direction: column;
   box-sizing: border-box;

@@ -1,7 +1,8 @@
-import React from "react";
-import ProduceContext from "../Context/ProduceContext";
-import Card from "react-bootstrap/Card";
-import CardDeck from "react-bootstrap/CardDeck";
+import React, { useContext, useEffect } from "react";
+import { ProduceContext } from "../Context/ProduceContext";
+import DisplayProduce from "../ReusableComponents/DisplayProduce";
+// import Card from "react-bootstrap/Card";
+// import CardDeck from "react-bootstrap/CardDeck";
 import styled from "styled-components";
 
 const StyledProduce = styled.div`
@@ -13,9 +14,15 @@ const StyledProduce = styled.div`
 `;
 
 export default function BuyProduce() {
+  const { getProduce } = useContext(ProduceContext);
+
+  useEffect(() => {
+    getProduce();
+  }, []);
   return (
     <>
-      <StyledProduce>
+      <DisplayProduce />
+      {/* <StyledProduce>
         <CardDeck>
           <Card>
             <Card.Img
@@ -69,7 +76,7 @@ export default function BuyProduce() {
             </Card.Footer>
           </Card>
         </CardDeck>
-      </StyledProduce>
+      </StyledProduce> */}
     </>
   );
 }
