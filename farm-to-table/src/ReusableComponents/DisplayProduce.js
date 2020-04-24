@@ -1,5 +1,6 @@
-import React, { useEffect, useContext } from "react";
-import ProduceContext from "../Context/ProduceContext";
+import React, { useContext } from "react";
+import { ProduceContext } from "../Context/ProduceContext";
+import CardDeck from "react-bootstrap/CardDeck";
 import Card from "react-bootstrap/Card";
 import styled from "styled-components";
 
@@ -12,17 +13,22 @@ const StyledProduce = styled.div`
 `;
 
 export default function DisplayProduce() {
-  const { produceInfo } = useContext(ProduceContext).data;
-  return (
-    <Card>
-      <Card.Img variant="top" height="160px" src={produceInfo.img} />
+  const { produceAvailable } = useContext(ProduceContext);
+  const produce = produceAvailable.map((item) => (
+    <Card style={{ width: "240px" }}>
+      <Card.Img variant="top" height="160px" src={item.img} />
       <Card.Body>
-        <Card.Title>{produceInfo.title}</Card.Title>
-        <Card.Text>{produceInfo.text}</Card.Text>
+        <Card.Title>{item.title}</Card.Title>
+        <Card.Text>{item.description}</Card.Text>
       </Card.Body>
       <Card.Footer>
-        <small>Last updated 3 mins ago</small>
+        <small>Price: ${item.price}</small>
       </Card.Footer>
     </Card>
+  ));
+  return (
+    <StyledProduce>
+      <CardDeck>{produce}</CardDeck>
+    </StyledProduce>
   );
 }

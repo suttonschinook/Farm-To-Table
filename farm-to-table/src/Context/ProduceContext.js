@@ -4,17 +4,13 @@ const axios = require("axios");
 
 export default function ProduceProvider(props) {
   const [produceState, setProduceState] = useState({
-    produceAvailable: {},
+    produceAvailable: [],
   });
-
   function getProduce() {
-    axios
-      .get("//localhost:9000")
-
-      .then((response) => {
-        console.log(response);
-        setProduceState((prev) => ({ ...prev, produceAvailable: response }));
-      });
+    axios.get("/produce").then((response) => {
+      console.log(response);
+      setProduceState((prev) => ({ ...prev, produceAvailable: response.data }));
+    });
   }
 
   return (
