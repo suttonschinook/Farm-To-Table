@@ -6,6 +6,7 @@ const Container = styled.div`
 
   width:750px;
   margin-left:22%;
+  margin-bottom:5%;
 `
 
 export default function Main() {

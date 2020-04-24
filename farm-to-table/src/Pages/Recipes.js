@@ -6,20 +6,23 @@ import Footer from "../ReusableComponents/Footer";
 
 
 
+
+
 export default function Recipes(props) {
   const {title, image, id } = props
   return (
     <div>
       <BootstrapNav />
       <Header />
-      <Footer />
-       <div className="meal">
+      <div className="meal">
         <Link to = {`/${id}`}>
           <img className="mealImg" src={image} alt="" />
           <div className="meal-info">
             <h1>{title}</h1>
           </div>
         </Link>
+      <Footer />
+       
       </div>
     </div>
       

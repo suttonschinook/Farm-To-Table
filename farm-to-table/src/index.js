@@ -5,10 +5,11 @@ import ProduceProvider from "./Context/ProduceContext";
 import App from "./App.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+
 ReactDOM.render(
   <BrowserRouter>
     <ProduceProvider>
-      <App />
+      <App/>
     </ProduceProvider>
   </BrowserRouter>,
   document.getElementById("root")
