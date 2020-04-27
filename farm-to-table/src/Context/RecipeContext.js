@@ -58,7 +58,8 @@ export default function RecipeMain() {
             title={recipe.strMeal}
             image={recipe.strMealThumb}
           />
-        ))}
+          ))}
+         
       </div>
     </div>
   );
