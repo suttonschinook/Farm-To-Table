@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-// import { faHome } from "@fortawesome/free-solid-svg-icons";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const StyledDiv = styled.div`
   display: flex;
@@ -23,10 +21,6 @@ const StyledFooter = styled.footer`
   background-color: #555;
   color: #bbb;
   line-height: 1.5;
-`;
-const StyledFooterA = styled.footer`
-  text-decoration: none;
-  color: #eee;
 `;
 const StyledFtTitle = styled.h2`
   color: #fff;
@@ -118,16 +112,16 @@ export default function Footer() {
             <StyledFtTitle>Resources</StyledFtTitle>
             <StyledUl>
               <li>
-                <a href="#">Docs</a>
+                <Link to="/">Docs</Link>
               </li>
               <li>
-                <a href="#">Blog</a>
+                <Link to="/">Blog</Link>
               </li>
               <li>
-                <a href="#">eBooks</a>
+                <Link to="/">eBooks</Link>
               </li>
               <li>
-                <a href="#">Webinars</a>
+                <Link to="/">Webinars</Link>
               </li>
             </StyledUl>
           </StyledFtMainItem>
@@ -135,13 +129,13 @@ export default function Footer() {
             <StyledFtTitle>Contact</StyledFtTitle>
             <StyledUl>
               <li>
-                <a href="#">Help</a>
+                <Link to="/">Help</Link>
               </li>
               <li>
-                <a href="#">Sales</a>
+                <Link to="/">Sales</Link>
               </li>
               <li>
-                <a href="#">Advertise</a>
+                <Link to="/">Advertise</Link>
               </li>
             </StyledUl>
           </StyledFtMainItem>
@@ -162,33 +156,87 @@ export default function Footer() {
         <StyledFtSocial class="ft-social">
           <StyledFtSocialList class="ft-social-list">
             <StyledFtSocialListLi>
-              <a href="#">
-                <i class="fab fa-facebook"></i>
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                alt=""
+              >
+                <img
+                  src="https://facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png?w=512&h=512"
+                  height="30px"
+                  alt=""
+                />
               </a>
             </StyledFtSocialListLi>
             <StyledFtSocialListLi>
-              <a href="#">
-                <i class="fab fa-twitter"></i>
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                alt=""
+              >
+                <img
+                  src="https://www.museumofplay.org/sites/default/files/Twitter_Social_Icon_Circle_Color.png"
+                  height="30px"
+                  alt=""
+                />
               </a>
             </StyledFtSocialListLi>
             <StyledFtSocialListLi>
-              <a href="#">
-                <i class="fab fa-instagram"></i>
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                alt=""
+              >
+                <img
+                  src="https://instagram-brand.com/wp-content/uploads/2016/11/Instagram_AppIcon_Aug2017.png?w=300"
+                  height="30px"
+                  alt=""
+                />
               </a>
             </StyledFtSocialListLi>
             <StyledFtSocialListLi>
-              <a href="#">
-                <i class="fab fa-github"></i>
+              <a
+                href="https://github.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                alt=""
+              >
+                <img
+                  src="http://pngimg.com/uploads/github/github_PNG83.png"
+                  height="30px"
+                  alt=""
+                />
               </a>
             </StyledFtSocialListLi>
             <StyledFtSocialListLi>
-              <a href="#">
-                <i class="fab fa-Linkedin"></i>
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                alt=""
+              >
+                <img
+                  src="http://www.pngall.com/wp-content/uploads/2016/07/Linkedin-Download-PNG.png"
+                  height="30px"
+                  alt=""
+                />
               </a>
             </StyledFtSocialListLi>
             <StyledFtSocialListLi>
-              <a href="#">
-                <i class="fab fa-youtube"></i>
+              <a
+                href="https://youtube.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                alt=""
+              >
+                <img
+                  src="https://png2.cleanpng.com/sh/98084439ad743800f857f4596336e676/L0KzQYm3U8IxN5R5iZH0aYP2gLBuTgVvcaVqfJ98dHH3dcS0mf92fKZnfZ91b3fyPcr2lgR2apYyiN5qeT3lhcX7jB4ufKNmhuV5YYLofsW0kP5oNWZmeqNrZUC7SYW9g8E3Nmk9UKsDOUW8QYa5UcU6P2o7SKg5OD7zfri=/kisspng-united-states-youtube-logo-youtube-play-button-transparent-png-5ab1be08946c16.888989591521597960608.png"
+                  height="30px"
+                  alt=""
+                />
               </a>
             </StyledFtSocialListLi>
           </StyledFtSocialList>
@@ -197,10 +245,10 @@ export default function Footer() {
         <StyledFtLegal>
           <StyledFtLegalList>
             <StyledFtLegalListLi>
-              <a href="#">Terms &amp; Conditions</a>
+              <Link to="/">Terms &amp; Conditions</Link>
             </StyledFtLegalListLi>
             <StyledFtLegalListLi>
-              <a href="#">Privacy Policy</a>
+              <Link to="/">Privacy Policy</Link>
             </StyledFtLegalListLi>
             <StyledFtLegalListLi>
               {" "}
