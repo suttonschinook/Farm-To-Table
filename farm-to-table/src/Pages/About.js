@@ -35,7 +35,6 @@ export default function About() {
             />
             <Carousel.Caption>
                 <h1>Sustainable Farms</h1>
-                <h3></h3>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -46,7 +45,6 @@ export default function About() {
             />
             <Carousel.Caption>
               <h1>Fresh Produce</h1>
-              <h3></h3>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
