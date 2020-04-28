@@ -21,7 +21,8 @@ export default function RecipeMain() {
           setRecipes(data.meals);
         }
       });
-  };
+    };
+    
 
   const handleChange = (event) => {
     setSearch(event.target.value);
