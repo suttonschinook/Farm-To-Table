@@ -4,6 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import InfoProvider from "./Context/InfoContext";
 import App from "./App.js";
 import "bootstrap/dist/css/bootstrap.min.css";
+import './styles.css'
 
 
 ReactDOM.render(
