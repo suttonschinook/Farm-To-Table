@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
-import Recipes from "./Pages/Recipes.js";
+import Recipes from "../ReusableComponents/Recipes.js";
+import Header from "../ReusableComponents/Header";
+import BootstrapNav from "../ReusableComponents/BootstrapNav";
+import Footer from "../ReusableComponents/Footer";
 
 export default function RecipeMain() {
   const [recipes, setRecipes] = useState([]);
@@ -35,6 +38,9 @@ export default function RecipeMain() {
   };
 
   return (
+    <>
+    <BootstrapNav />
+    <Header />
     <div className="">
       <h1>Recipe Finder</h1>
       <div classname="flex">
@@ -63,7 +69,7 @@ export default function RecipeMain() {
          
       </div>
     </div>
+    <Footer />
+    </>
   );
 }
-      
-  

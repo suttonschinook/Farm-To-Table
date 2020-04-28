@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { ProduceContext } from "../Context/ProduceContext";
+import { InfoContext } from "../Context/InfoContext";
 import CardDeck from "react-bootstrap/CardDeck";
 import Card from "react-bootstrap/Card";
 import styled from "styled-components";
@@ -13,7 +13,7 @@ const StyledProduce = styled.div`
 `;
 
 export default function DisplayProduce() {
-  const { produceAvailable } = useContext(ProduceContext);
+  const { produceAvailable } = useContext(InfoContext);
   const produce = produceAvailable.map((item) => (
     <Card style={{ width: "240px" }}>
       <Card.Img variant="top" height="160px" src={item.img} />

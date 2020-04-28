@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import { Router, Route } from "react-router-dom";
 import Header from "../ReusableComponents/Header";
 import BootstrapNav from "../ReusableComponents/BootstrapNav";
 import Info from "../Content/Info";
@@ -35,7 +34,6 @@ export default function About() {
             />
             <Carousel.Caption>
                 <h1>Sustainable Farms</h1>
-                <h3></h3>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -46,7 +44,6 @@ export default function About() {
             />
             <Carousel.Caption>
               <h1>Fresh Produce</h1>
-              <h3></h3>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
