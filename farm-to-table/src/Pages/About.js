@@ -1,16 +1,20 @@
 import React, {useState} from "react";
+import { Router, Route } from "react-router-dom";
 import Header from "../ReusableComponents/Header";
 import BootstrapNav from "../ReusableComponents/BootstrapNav";
 import Info from "../Content/Info";
 import Footer from "../ReusableComponents/Footer";
 import styled from "styled-components"
 import Carousel from 'react-bootstrap/Carousel'
+import MyApp from '../Content/MyApp.js'
+
 
 const Container = styled.div`
 
   width:750px;
   margin-left:22%;
 `
+
 
 export default function About() {
 
@@ -31,7 +35,6 @@ export default function About() {
             />
             <Carousel.Caption>
                 <h1>Sustainable Farms</h1>
-                <h3></h3>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -42,7 +45,6 @@ export default function About() {
             />
             <Carousel.Caption>
               <h1>Fresh Produce</h1>
-              <h3></h3>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -67,6 +69,7 @@ export default function About() {
       <Header />
       <ControlledCarousel />
       <Info />
+      <MyApp/>
       <Footer />
     </div>
   );

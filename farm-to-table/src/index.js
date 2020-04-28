@@ -1,15 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
-import ProduceContext from "./Context/ProduceContext";
+import ProduceProvider from "./Context/ProduceContext";
 import App from "./App.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+
 ReactDOM.render(
   <BrowserRouter>
-    <ProduceContext>
-      <App />
-    </ProduceContext>
+    <ProduceProvider>
+      <App/>
+    </ProduceProvider>
   </BrowserRouter>,
   document.getElementById("root")
 );
