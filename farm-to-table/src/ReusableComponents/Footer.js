@@ -2,6 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
+const StyledLink = styled(Link)`
+color: whitesmoke;
+`
 const StyledDiv = styled.div`
   display: flex;
   flex: 1;
@@ -14,11 +17,12 @@ const StyledDiv = styled.div`
   justify-content: space-evenly;
 `;
 const StyledUl = styled.ul`
+  color: whitesmoke;
   list-style: none;
   padding-left: 0;
 `;
 const StyledFooter = styled.footer`
-  background-color: #555;
+  background-color: #007bff;
   color: #bbb;
   line-height: 1.5;
 `;
@@ -49,7 +53,7 @@ const StyledInputEmail = styled.input`
 `;
 const StyledInputSubmit = styled.input`
   background-color: #00d188;
-  color: #fff;
+  color: whitesmoke;
   cursor: pointer;
   border: 0;
   padding: 0.625rem 0.9375rem;
@@ -92,19 +96,19 @@ export default function Footer() {
             <StyledFtTitle>About</StyledFtTitle>
             <StyledUl>
               <li>
-                <Link to="/">Home</Link>
+                <StyledLink to="/">Home</StyledLink>
               </li>
               <li>
-                <Link to="/about">About</Link>
+                <StyledLink to="/about">About</StyledLink>
               </li>
               <li>
-                <Link to="/produce">Produce</Link>
+                <StyledLink to="/produce">Produce</StyledLink>
               </li>
               <li>
-                <Link to="/recipes">Recipes</Link>
+                <StyledLink to="/recipes">Recipes</StyledLink>
               </li>
               <li>
-                <Link to="/">Something Else</Link>
+                <StyledLink to="/">Something Else</StyledLink>
               </li>
             </StyledUl>
           </StyledFtMainItem>
@@ -112,16 +116,16 @@ export default function Footer() {
             <StyledFtTitle>Resources</StyledFtTitle>
             <StyledUl>
               <li>
-                <Link to="/">Docs</Link>
+                <StyledLink to="/">Docs</StyledLink>
               </li>
               <li>
-                <Link to="/">Blog</Link>
+                <StyledLink to="/">Blog</StyledLink>
               </li>
               <li>
-                <Link to="/">eBooks</Link>
+                <StyledLink to="/">eBooks</StyledLink>
               </li>
               <li>
-                <Link to="/">Webinars</Link>
+                <StyledLink to="/">Webinars</StyledLink>
               </li>
             </StyledUl>
           </StyledFtMainItem>
@@ -129,13 +133,13 @@ export default function Footer() {
             <StyledFtTitle>Contact</StyledFtTitle>
             <StyledUl>
               <li>
-                <Link to="/">Help</Link>
+                <StyledLink to="/">Help</StyledLink>
               </li>
               <li>
-                <Link to="/">Sales</Link>
+                <StyledLink to="/">Sales</StyledLink>
               </li>
               <li>
-                <Link to="/">Advertise</Link>
+                <StyledLink to="/">Advertise</StyledLink>
               </li>
             </StyledUl>
           </StyledFtMainItem>
@@ -245,10 +249,10 @@ export default function Footer() {
         <StyledFtLegal>
           <StyledFtLegalList>
             <StyledFtLegalListLi>
-              <Link to="/">Terms &amp; Conditions</Link>
+              <StyledLink to="/">Terms &amp; Conditions</StyledLink>
             </StyledFtLegalListLi>
             <StyledFtLegalListLi>
-              <Link to="/">Privacy Policy</Link>
+              <StyledLink to="/">Privacy Policy</StyledLink>
             </StyledFtLegalListLi>
             <StyledFtLegalListLi>
               {" "}
