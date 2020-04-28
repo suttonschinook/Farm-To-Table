@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Recipes from "./Pages/Recipes.js";
+import Recipes from "../ReusableComponents/Recipes.js";
 
 export default function RecipeMain() {
   const [recipes, setRecipes] = useState([]);
@@ -64,5 +64,3 @@ export default function RecipeMain() {
     </div>
   );
 }
-      
-  
