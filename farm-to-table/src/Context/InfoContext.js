@@ -14,16 +14,8 @@ export default function InfoProvider(props) {
     });
   }
 
-  function getRecipes() {
-    axios.get("https://www.themealdb.com/api/json/v1/1/search.php?f=a")
-    .then((response) => {
-      console.log(response);
-      setInfoState((prev) => ({ ...prev, availableRecipes: response.data }));
-    });
-  }
-
   return (
-    <InfoContext.Provider value={{ ...infoState, getProduce, getRecipes }}>
+    <InfoContext.Provider value={{ ...infoState, getProduce }}>
       {props.children}
     </InfoContext.Provider>
   );
