@@ -20,6 +20,7 @@
     "mongoose": "^5.9.9",
     "node.js": "0.0.1-security",
     "nodejs": "0.0.0",
+    "nodemon": "^2.0.3",
     "react": "^16.13.1",
     "react-add-to-calendar": "^0.1.5",
     "react-big-calendar": "^0.24.5",
