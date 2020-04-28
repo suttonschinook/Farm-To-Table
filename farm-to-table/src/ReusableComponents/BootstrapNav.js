@@ -15,7 +15,7 @@ const StyledLink = styled(Link)`
 export default function BootstrapNav() {
   return (
     <>
-      <Navbar bg="dark" variant="dark">
+      <Navbar bg="primary" variant="dark">
         <Navbar.Brand to="/home">
           <img
             alt=""
@@ -29,10 +29,6 @@ export default function BootstrapNav() {
           <StyledLink to="/recipes">Recipes</StyledLink>
           <StyledLink to="/about">About</StyledLink>
         </Nav>
-        <Form inline>
-          <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-          <Button variant="outline-light">Search</Button>
-        </Form>
       </Navbar>
     </>
   );
