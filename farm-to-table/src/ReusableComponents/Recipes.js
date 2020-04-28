@@ -1,31 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Header from "../ReusableComponents/Header";
-import BootstrapNav from "../ReusableComponents/BootstrapNav";
-import Footer from "../ReusableComponents/Footer";
-
-
-
-
 
 export default function Recipes(props) {
-  const {title, image, id } = props
+  const { title, image, id } = props;
   return (
     <div>
-      <BootstrapNav />
-      <Header />
       <div className="meal">
-        <Link to = {`/${id}`}>
+        <Link to={`/${id}`}>
           <img className="mealImg" src={image} alt="" />
           <div className="meal-info">
             <h1>{title}</h1>
           </div>
         </Link>
-      <Footer />
-       
       </div>
     </div>
-      
   );
-
 }
