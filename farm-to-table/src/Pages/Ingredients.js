@@ -1,6 +1,62 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import BootstrapNav from '../ReusableComponents/BootstrapNav';
+import Header from '../ReusableComponents/Header';
+import Footer from '../ReusableComponents/Footer';
+import styled from 'styled-components';
 
+const StyledMeal = styled.div`
+	font-family: 'Roboto';
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	font-family: 'Roboto';
+	padding: 10px;
+`;
+const StyledTitle = styled.h1`
+	display: flex;
+	font-size: 50px;
+	grid-column: 3/4;
+	justify-content: center;
+`;
+
+const StyledImg = styled.img`
+	display: flex;
+	grid-column: 3/4;
+	width: 100%;
+	justify-content: center;
+`;
+
+const StyledInstructionTitle = styled.h2`
+	display: flex;
+	justify-content: center;
+	font-weight: 'bold';
+	font-size: '30px';
+	grid-column: 1/3;
+	grid-row: 3/4;
+`;
+const StyledInstructions = styled.h5`
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	grid-column: 1/4;
+	grid-row: 4/5;
+`;
+
+const StyledIngredients = styled.h3`
+	display: flex;
+	justify-content: center;
+	grid-column: 4/6;
+	grid-row: 3/4;
+`;
+
+const StyledUl = styled.ul`
+	display: table-cell;
+	vertical-align: text-top;
+	text-align: center;
+	grid-column: 4/6;
+	grid-row: 4/5;
+`;
+const StyledMealInfo = styled.div``;
 export default function Ingredients(props) {
 	const { id } = useParams();
 	useEffect(() => {
@@ -31,38 +87,43 @@ export default function Ingredients(props) {
 	}
 
 	return (
-		<div class='single-meal'>
-			<h1>{item.strMeal}</h1>
-			<img src={item.strMealThumb} alt='' />
-			<div class='single-meal-info'>
-				{item.strCategory ? <p>{item.strCategory}</p> : ''}
-				{item.strArea ? <p>{item.strArea}</p> : ''}
+		<>
+			<BootstrapNav />
+			<Header />
+			<div class='single-meal'>
+				<StyledMeal>
+					<StyledTitle>{item.strMeal} </StyledTitle>
+					<StyledImg src={item.strMealThumb} alt='' />
+					<StyledInstructionTitle>
+						Instructions
+					</StyledInstructionTitle>
+					<StyledInstructions>
+						{item.strInstructions}
+					</StyledInstructions>
+					<StyledIngredients>Ingredients</StyledIngredients>
+					{console.log(ingredients)}
+					<StyledUl>
+						{ingredients.map((ing) => (
+							<li>{ing}</li>
+						))}
+					</StyledUl>
+				</StyledMeal>
+				<StyledMealInfo class='single-meal-info'>
+					{item.strCategory ? (
+						<p>Category: {item.strCategory}</p>
+					) : (
+						''
+					)}
+					{item.strArea ? <p> Origin: {item.strArea}</p> : ''}
+				</StyledMealInfo>
 			</div>
-			<div class='main'>
-				<p
-					style={{
-						fontWeight: 'bold',
-						fontSize: '20px',
-						marginBottom: '5px',
-					}}
-				>
-					Instructions
-				</p>
-				<p>{item.strInstructions}</p>
-				<h2>Ingredients</h2>
-				{console.log(ingredients)}
-				<ul>
-					{ingredients.map((ing) => (
-						<li>{ing}</li>
-					))}
-				</ul>
-			</div>
-		</div>
+			<Footer />
+		</>
 	);
 }
 
-// Going to need in the future...
+//  Going to need in the future...
 
-// <Route path="/:id">
-// <Ingredients />
-// </Route>
+//  <Route path="/:id">
+//  <Ingredients />
+//  </Route>
