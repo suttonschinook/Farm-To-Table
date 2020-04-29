@@ -5,7 +5,6 @@ const axios = require('axios');
 export default function InfoProvider(props) {
 	const [infoState, setInfoState] = useState({
 		produceAvailable: [],
-		availableRecipes: [],
 	});
 
 	function getProduce() {

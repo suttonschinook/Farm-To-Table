@@ -8,9 +8,9 @@ const StyledLink = styled(Link)`
 const StyledDiv = styled.div`
 	display: flex;
 	flex: 1;
-	min-height: 100vh;
+	min-height: 40vh;
 	flex-direction: column;
-	box-sizing: border-box;
+
 	font-family: ’Lato’, sans-serif;
 	margin: 0;
 	padding: 0;
@@ -23,6 +23,7 @@ const StyledUl = styled.ul`
 `;
 const StyledFooter = styled.footer`
 	background-color: #007bff;
+	height: 40vh;
 	color: #bbb;
 	line-height: 1.5;
 `;
@@ -106,28 +107,19 @@ export default function Footer() {
 							<li>
 								<StyledLink to='/produce'>Produce</StyledLink>
 							</li>
-							<li>
-								<StyledLink to='/recipes'>Recipes</StyledLink>
-							</li>
-							<li>
-								<StyledLink to='/'>Something Else</StyledLink>
-							</li>
 						</StyledUl>
 					</StyledFtMainItem>
 					<StyledFtMainItem class='ft-main-item'>
 						<StyledFtTitle>Resources</StyledFtTitle>
 						<StyledUl>
 							<li>
-								<StyledLink to='/'>Docs</StyledLink>
+								<StyledLink to='/recipes'>Recipes</StyledLink>
 							</li>
 							<li>
 								<StyledLink to='/'>Blog</StyledLink>
 							</li>
 							<li>
 								<StyledLink to='/'>eBooks</StyledLink>
-							</li>
-							<li>
-								<StyledLink to='/'>Webinars</StyledLink>
 							</li>
 						</StyledUl>
 					</StyledFtMainItem>
