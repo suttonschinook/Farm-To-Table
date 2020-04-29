@@ -17,16 +17,20 @@ const StyledHeader = styled.h1`
   font-size:70px;
   text-shadow: 2px 2px darkgray;
   height:5vh;
-  margin-top:-4%;
+  margin-top:-50px;
 `
 const StyledFarmer = styled.h2`
+display: flex;
 color:rgb(43, 42, 42);
 font-family:'Roboto', sans-serif;
 font-size:18px;
 font-style:italic;
 height:3px;
-margin-top:4%;
-margin-left:15%;
+justify-content: center;
+align-items: center;
+margin-top:40px;
+margin-left: auto;
+margin-right: auto;
 
 `
 

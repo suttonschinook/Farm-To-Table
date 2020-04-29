@@ -2,9 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
-import FormControl from "react-bootstrap/FormControl";
 import styled from "styled-components";
 
 const StyledLink = styled(Link)`

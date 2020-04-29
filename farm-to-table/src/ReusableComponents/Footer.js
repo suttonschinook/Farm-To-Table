@@ -38,6 +38,7 @@ const StyledFtMain = styled.footer`
   flex-wrap: wrap;
 `;
 const StyledFtMainItem = styled.footer`
+  color: whitesmoke;
   padding: 1.25rem;
   min-width: 12.5rem /*200px*/;
 `;
@@ -47,12 +48,13 @@ const StyledForm = styled.form`
   flex-wrap: wrap;
 `;
 const StyledInputEmail = styled.input`
+  color: whitesmoke;
   border: 0;
   padding: 0.625rem;
   margin-top: 0.3125rem;
 `;
 const StyledInputSubmit = styled.input`
-  background-color: #00d188;
+  background-color: red;
   color: whitesmoke;
   cursor: pointer;
   border: 0;
