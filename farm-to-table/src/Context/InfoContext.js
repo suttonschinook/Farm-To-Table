@@ -7,6 +7,7 @@ export default function InfoProvider(props) {
 		produceAvailable: [],
 		availableRecipes: [],
 	});
+
 	function getProduce() {
 		axios.get('/produce').then((response) => {
 			console.log(response);
@@ -17,8 +18,9 @@ export default function InfoProvider(props) {
 		});
 	}
 
+
 	return (
-		<InfoContext.Provider value={{ ...infoState, getProduce }}>
+		<InfoContext.Provider value={{ ...infoState, getProduce}}>
 			{props.children}
 		</InfoContext.Provider>
 	);
