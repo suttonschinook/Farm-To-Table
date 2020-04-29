@@ -1,9 +1,12 @@
-import React from 'react';
-import { Route, Switch } from 'react-router-dom';
-import About from './Pages/About';
-import RecipeMain from './Pages/RecipeMain';
-import Home from './Pages/Home';
-import Produce from './Pages/Produce';
+
+import React from "react";
+import { Route, Switch } from "react-router-dom";
+import About from "./Pages/About";
+import RecipeMain from "./Pages/RecipeMain";
+import Home from "./Pages/Home";
+import Produce from "./Pages/Produce";
+import "./styles.css"
+
 
 export default function App() {
 	return (

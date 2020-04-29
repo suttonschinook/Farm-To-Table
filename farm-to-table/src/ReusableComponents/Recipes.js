@@ -1,39 +1,41 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import CardDeck from 'react-bootstrap/CardDeck';
-import Card from 'react-bootstrap/Card';
-import styled from 'styled-components';
 
-const StyledRecipe = styled.div`
-	display: flex;
-	width: 50vw;
-	margin: auto;
-	justify-content: center;
-	align-items: center;
-`;
+import React from "react";
+import { Link } from "react-router-dom";
+import Card from 'react-bootstrap/Card'
+import styled from 'styled-components'
+
+const Container = styled.div`
+  display:block;
+  
+`
 
 export default function Recipes(props) {
-	const { title, image, id } = props;
-	return (
-		<>
-			<StyledRecipe className='meal'>
-				<CardDeck>
-					<Link to={`/${id}`}>
-						<Card style={{ width: '240px' }}>
-							<Card.Img
-								variant='top'
-								height='160px'
-								src={image}
-								alt=''
-								className='mealImg'
-							/>
-							<Card.Body>
-								<Card.Title>{title}</Card.Title>
-							</Card.Body>
-						</Card>
-					</Link>
-				</CardDeck>
-			</StyledRecipe>
-		</>
-	);
+  const { title, image, id } = props;
+  return(
+    <div>
+          
+        <div className="meal">
+            <Link to={`/${id}`}>
+            <Container>
+              <Card style={{ margin:'5%', width: '18rem' }}>
+                <Card.Img variant="top" src={image} />
+                <Card.Body>
+                  <Card.Title>{title}</Card.Title>
+                  <Card.Text>
+                  Some quick example text to build on the card title and make up the bulk of
+                  the card's content.
+                  </Card.Text>
+                <button variant="primary">Go somewhere</button>
+                </Card.Body>
+              </Card>
+         
+          </Container>  
+          </Link>
+        </div>
+    </div>
+  );
+
 }
+      
+      
+    
