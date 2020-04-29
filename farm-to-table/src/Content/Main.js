@@ -4,7 +4,9 @@ import styled from 'styled-components';
 
 const Container = styled.div`
 	width: 750px;
-	margin-left: 22%;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	margin-left: 25%;
 `;
 
 export default function Main() {
