@@ -1,27 +1,27 @@
-const express = require("express");
+const express = require('express');
 const app = express();
-const morgan = require("morgan");
-const mongoose = require("mongoose");
+const morgan = require('morgan');
+const mongoose = require('mongoose');
 
 app.use(express.json());
-app.use(morgan("dev"));
+app.use(morgan('dev'));
 
 mongoose.connect(
-  "mongodb://localhost:27017/producedb",
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true,
-    useFindAndModify: false,
-  },
-  () => console.log("Connected to the DB")
+	'mongodb://localhost:27017/producedb',
+	{
+		useNewUrlParser: true,
+		useUnifiedTopology: true,
+		useCreateIndex: true,
+		useFindAndModify: false,
+	},
+	() => console.log('Connected to the DB')
 );
 
-app.use("/produce", require("./routes/prodRouter.js"));
+app.use('/produce', require('./routes/prodRouter.js'));
 
 app.use((err, req, res, next) => {
-  console.log(err);
-  return res.send({ errMsg: err.message });
+	console.log(err);
+	return res.send({ errMsg: err.message });
 });
 
 //Not sure what this is or if its being used in future....
@@ -35,5 +35,5 @@ app.use((err, req, res, next) => {
 // });
 
 app.listen(9000, () => {
-  console.log("The server is running");
+	console.log('The server is running');
 });
