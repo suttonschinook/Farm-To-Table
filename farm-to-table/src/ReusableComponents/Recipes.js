@@ -1,3 +1,4 @@
+// <<<<<<< HEAD
 import React from "react";
 import { Link } from "react-router-dom";
 import Card from 'react-bootstrap/Card'
@@ -35,6 +36,7 @@ export default function Recipes(props) {
         </div>
     </div>
   );
+
 }
 
       
