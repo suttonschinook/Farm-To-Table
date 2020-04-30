@@ -188,7 +188,7 @@ export default function Footer() {
 						</StyledFtSocialListLi>
 						<StyledFtSocialListLi>
 							<a
-								href='https://facebook.com'
+								href='https://instagram.com'
 								target='_blank'
 								rel='noopener noreferrer'
 								alt=''
