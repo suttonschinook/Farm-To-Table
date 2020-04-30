@@ -57,6 +57,7 @@ const StyledUl = styled.ul`
 	grid-row: 4/5;
 `;
 const StyledMealInfo = styled.div``;
+
 export default function Ingredients(props) {
 	const { id } = useParams();
 	useEffect(() => {
@@ -100,6 +101,7 @@ export default function Ingredients(props) {
 					<StyledInstructions>
 						{item.strInstructions}
 					</StyledInstructions>
+
 					<StyledIngredients>Ingredients</StyledIngredients>
 					{console.log(ingredients)}
 					<StyledUl>
