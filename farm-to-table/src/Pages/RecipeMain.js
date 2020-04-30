@@ -3,6 +3,36 @@ import Recipes from '../ReusableComponents/Recipes.js';
 import Header from '../ReusableComponents/Header';
 import BootstrapNav from '../ReusableComponents/BootstrapNav';
 import Footer from '../ReusableComponents/Footer';
+import CardDeck from 'react-bootstrap/CardDeck';
+import styled from 'styled-components';
+
+const StyledFormContainer = styled.div`
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+`;
+
+const StyledTitle = styled.h1`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	grid-column: 2/3;
+	grid-row: 1/2;
+`;
+
+const StyledForm = styled.form`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	grid-column: 2/3;
+	grid-row: 2/3;
+	margin-bottom: 20px;
+`;
+
+const StyledCardDeck = styled(CardDeck)`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+`;
 
 export default function RecipeMain() {
 	const [recipes, setRecipes] = useState([]);
@@ -40,12 +70,12 @@ export default function RecipeMain() {
 		<>
 			<BootstrapNav />
 			<Header />
-			<div className=''>
-				<h1>Recipe Finder</h1>
-				<div classname='flex'>
-					<form onSubmit={handleSubmit} className=''>
+			<div>
+				<StyledFormContainer>
+					<StyledTitle>Recipe Finder</StyledTitle>
+					<StyledForm onSubmit={handleSubmit} className=''>
 						<input
-							placeholder='Search for meals or keyword '
+							placeholder='Search for a meal'
 							className='search'
 							type='text'
 							value={search}
@@ -54,9 +84,9 @@ export default function RecipeMain() {
 						<button className='search-btn' type='submit'>
 							Search
 						</button>
-					</form>
-				</div>
-				<div className='meals'>
+					</StyledForm>
+				</StyledFormContainer>
+				<StyledCardDeck>
 					{recipes.map((recipe) => (
 						<Recipes
 							key={recipe.idMeal}
@@ -65,7 +95,7 @@ export default function RecipeMain() {
 							image={recipe.strMealThumb}
 						/>
 					))}
-				</div>
+				</StyledCardDeck>
 			</div>
 			<Footer />
 		</>
