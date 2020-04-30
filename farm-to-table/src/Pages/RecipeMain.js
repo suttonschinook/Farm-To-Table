@@ -3,7 +3,14 @@ import Recipes from '../ReusableComponents/Recipes.js';
 import Header from '../ReusableComponents/Header';
 import BootstrapNav from '../ReusableComponents/BootstrapNav';
 import Footer from '../ReusableComponents/Footer';
+import CardDeck from 'react-bootstrap/CardDeck';
+import styled from 'styled-components';
 
+const StyledCardDeck = styled(CardDeck)`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+`;
 export default function RecipeMain() {
 	const [recipes, setRecipes] = useState([]);
 	const [search, setSearch] = useState('');
@@ -56,7 +63,7 @@ export default function RecipeMain() {
 						</button>
 					</form>
 				</div>
-				<div className='meals'>
+				<StyledCardDeck>
 					{recipes.map((recipe) => (
 						<Recipes
 							key={recipe.idMeal}
@@ -65,7 +72,7 @@ export default function RecipeMain() {
 							image={recipe.strMealThumb}
 						/>
 					))}
-				</div>
+				</StyledCardDeck>
 			</div>
 			<Footer />
 		</>
