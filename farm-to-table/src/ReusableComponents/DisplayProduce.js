@@ -6,8 +6,14 @@ import styled from 'styled-components';
 
 const StyledProduce = styled.div`
 	display: flex;
+	flex-wrap: wrap;
 	width: 50vw;
 	margin: auto;
+	justify-content: center;
+	align-items: center;
+`;
+const StyledCardDeck = styled(CardDeck)`
+	display: flex;
 	justify-content: center;
 	align-items: center;
 `;
@@ -28,7 +34,7 @@ export default function DisplayProduce() {
 	));
 	return (
 		<StyledProduce>
-			<CardDeck>{produce}</CardDeck>
+			<StyledCardDeck>{produce}</StyledCardDeck>
 		</StyledProduce>
 	);
 }
