@@ -4,36 +4,7 @@ const axios = require('axios');
 
 export default function InfoProvider(props) {
 	const [infoState, setInfoState] = useState({
-		produceAvailable: [
-			{
-				img:
-					'https://cdn.freebiesupply.com/images/large/2x/apple-logo-transparent.png',
-				title: 'apple',
-				price: 'Too Damn Much Money',
-				description: 'Way overpriced crapple product',
-			},
-			{
-				img:
-					'https://cdn.freebiesupply.com/images/large/2x/apple-logo-transparent.png',
-				title: 'apple',
-				price: 'Too Damn Much Money',
-				description: 'Way overpriced crapple product',
-			},
-			{
-				img:
-					'https://cdn.freebiesupply.com/images/large/2x/apple-logo-transparent.png',
-				title: 'apple',
-				price: 'Too Damn Much Money',
-				description: 'Way overpriced crapple product',
-			},
-			{
-				img:
-					'https://cdn.freebiesupply.com/images/large/2x/apple-logo-transparent.png',
-				title: 'apple',
-				price: 'Too Damn Much Money',
-				description: 'Way overpriced crapple product',
-			},
-		],
+		produceAvailable: [],
 	});
 
 	function getProduce() {
