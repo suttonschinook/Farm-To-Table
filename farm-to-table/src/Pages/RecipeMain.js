@@ -6,6 +6,20 @@ import Footer from '../ReusableComponents/Footer';
 import CardDeck from 'react-bootstrap/CardDeck';
 import styled from 'styled-components';
 
+const StyledInput = styled.input`
+	color: whitesmoke;
+	border: 1px solid grey;
+	padding: 0.625rem;
+	margin-top: 0.3125rem;
+`;
+const StyledButton = styled.button`
+	background-color: red;
+	color: whitesmoke;
+	cursor: pointer;
+	border: 1px solid grey;
+	padding: 0.625rem 0.9375rem;
+	margin-top: 0.3125rem;
+`;
 const StyledFormContainer = styled.div`
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -74,16 +88,16 @@ export default function RecipeMain() {
 				<StyledFormContainer>
 					<StyledTitle>Recipe Finder</StyledTitle>
 					<StyledForm onSubmit={handleSubmit} className=''>
-						<input
+						<StyledInput
 							placeholder='Search for a meal'
 							className='search'
 							type='text'
 							value={search}
 							onChange={handleChange}
 						/>
-						<button className='search-btn' type='submit'>
+						<StyledButton type='submit' value='Seach'>
 							Search
-						</button>
+						</StyledButton>
 					</StyledForm>
 				</StyledFormContainer>
 				<StyledCardDeck>
