@@ -257,7 +257,7 @@ export default function Footer() {
 						</StyledFtLegalListLi>
 						<StyledFtLegalListLi>
 							{' '}
-							2020 Copyright Farm To Table LLC
+							2020 Copyright Farm2Table LLC
 						</StyledFtLegalListLi>
 					</StyledFtLegalList>
 				</StyledFtLegal>

@@ -40,7 +40,7 @@ export default function Header() {
 			<StyledContainer>
 				<Container>
 					<StyledTitle to='/' className='header'>
-						Farm to Table
+						Farm2Table
 					</StyledTitle>
 					<StyledFarmer>
 						A virtual farmers market experience
