@@ -7,7 +7,7 @@ import styled from 'styled-components';
 const StyledProduce = styled.div`
 	display: flex;
 	flex-wrap: wrap;
-	width: 50vw;
+	width: 70vw;
 	margin: auto;
 	justify-content: center;
 	align-items: center;
