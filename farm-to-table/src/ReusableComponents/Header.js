@@ -5,9 +5,11 @@ import Container from 'react-bootstrap/Container';
 import styled from 'styled-components';
 
 const StyledContainer = styled.div`
-	height: 40px;
+	height:8vh;
 `;
+
 const StyledTitle = styled(Link)`
+@media only screen and (max-width:600px){
 	display: flex;
 	:hover {
 		text-decoration: none;
@@ -15,12 +17,42 @@ const StyledTitle = styled(Link)`
 	justify-content: space-around;
 	color: rgb(43, 42, 42);
 	font-family: 'Roboto', sans-serif;
-	font-size: 70px;
-	text-shadow: 2px 2px darkgray;
-	height: 5vh;
-	margin-top: -50px;
+	font-size: 35x;
+	text-shadow: 1px 1px darkgray;
+	height: 5px;
+	margin-top: -30px;
+}
+@media only screen and (min-width:600px){
+	font-size:50px;
+	display: flex;
+	:hover {
+		text-decoration: none;
+	}
+	justify-content: space-around;
+	color: rgb(43, 42, 42);
+	font-family: 'Roboto', sans-serif;
+	font-size: 35x;
+	text-shadow: 3px 3px darkgray;
+	height: 5px;
+	margin-top: -30px;
+}
 `;
+
 const StyledFarmer = styled.h2`
+@media only screen and (max-width:600px){
+	display: flex;
+	color: rgb(43, 42, 42);
+	font-family: 'Roboto', sans-serif;
+	font-size: 10px;
+	font-style: italic;
+	height: 3px;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+@media only screen and (min-width:600px){
 	display: flex;
 	color: rgb(43, 42, 42);
 	font-family: 'Roboto', sans-serif;
@@ -32,6 +64,8 @@ const StyledFarmer = styled.h2`
 	margin-top: 40px;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 10%;
+}
 `;
 
 export default function Header() {

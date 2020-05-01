@@ -3,11 +3,46 @@ import Carousel from 'react-bootstrap/Carousel';
 import styled from 'styled-components';
 
 const Container = styled.div`
-	width: 750px;
+@media only screen and (max-width:400px){
+	width: 250px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
 	margin-top: 3%;
 	margin-bottom: 3%;
-	margin-left: 25%;
-`;
+	margin-left:15%;
+	
+}
+@media only screen and (max-width:600px){
+	width: 350px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	width: 330px;
+	margin-top: 3%;
+	margin-bottom: 3%;
+
+
+}
+@media only screen and (min-width:600px){
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	width: 600px;
+	margin-top: 3%;
+	margin-bottom: 3%;
+
+}
+`
+const StyledTitle = styled.h1`
+@media only screen and (max-width:500px){
+	font-size:12px;
+}
+@media only screen and (min-width:500px){
+	font-size:15px;
+}
+@media only screen and (min width:)
+`
 
 export default function Main() {
 	function ControlledCarousel() {
@@ -27,7 +62,7 @@ export default function Main() {
 							alt='First slide'
 						/>
 						<Carousel.Caption>
-							<h1>Sustainable Farms</h1>
+							<StyledTitle>Sustainable Farms</StyledTitle>
 						</Carousel.Caption>
 					</Carousel.Item>
 					<Carousel.Item>
@@ -37,7 +72,7 @@ export default function Main() {
 							alt='Second slide'
 						/>
 						<Carousel.Caption>
-							<h1>Fresh Produce</h1>
+							<StyledTitle>Fresh Produce</StyledTitle>
 						</Carousel.Caption>
 					</Carousel.Item>
 					<Carousel.Item>
@@ -47,7 +82,7 @@ export default function Main() {
 							alt='Third slide'
 						/>
 						<Carousel.Caption>
-							<h1>Locally Sourced</h1>
+							<StyledTitle>Locally Sourced</StyledTitle>
 						</Carousel.Caption>
 					</Carousel.Item>
 				</Carousel>
