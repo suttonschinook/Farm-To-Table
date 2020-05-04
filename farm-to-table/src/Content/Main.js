@@ -4,23 +4,26 @@ import styled from 'styled-components';
 
 const Container = styled.div`
 @media only screen and (max-width:400px){
-	width: 250px;
+	width: 200px;
 	display:flex;
 	justify-content:center;
 	align-items:center;
 	margin-top: 3%;
-	margin-bottom: 3%;
-	margin-left:15%;
+	margin-bottom: 10%;
+	margin-left:auto;
+	margin-right:auto;
 	
 }
-@media only screen and (max-width:600px){
-	width: 350px;
+@media only screen and (max-width:500px){
+	width: 200px;
 	display:flex;
 	justify-content:center;
 	align-items:center;
 	width: 330px;
 	margin-top: 3%;
-	margin-bottom: 3%;
+	margin-bottom:10%;
+	margin-left:auto;
+	margin-right:auto;
 
 
 }
@@ -31,7 +34,12 @@ const Container = styled.div`
 	width: 600px;
 	margin-top: 3%;
 	margin-bottom: 3%;
+	margin-left:auto;
+	margin-right:auto;
 
+}
+@media only screen and (min-width:1100px){
+	width:900px;
 }
 `
 const StyledTitle = styled.h1`
@@ -39,9 +47,11 @@ const StyledTitle = styled.h1`
 	font-size:12px;
 }
 @media only screen and (min-width:500px){
-	font-size:15px;
+	font-size:20px;
 }
-@media only screen and (min width:)
+@media only screen and (min width:1000px){
+	font-size:30px;
+}
 `
 
 export default function Main() {
@@ -70,7 +80,7 @@ export default function Main() {
 							className='d-block w-100'
 							src='https://images.unsplash.com/photo-1495570689269-d883b1224443?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1789&q=80'
 							alt='Second slide'
-						/>
+							/>
 						<Carousel.Caption>
 							<StyledTitle>Fresh Produce</StyledTitle>
 						</Carousel.Caption>
@@ -86,7 +96,7 @@ export default function Main() {
 						</Carousel.Caption>
 					</Carousel.Item>
 				</Carousel>
-			</Container>
+			</Container>		
 		);
 	}
 	return (

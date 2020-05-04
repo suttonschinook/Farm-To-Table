@@ -34,6 +34,11 @@ const StyledNavbar = styled.nav`
 	justify-content:center;
 	height:8vh;
 }
+@media only screen and (max-width:600px){
+	display:flex;
+	justify-content:center;
+	height:8vh;
+}
 @media only screen and (min-width:600px){
 	height:10vh;
 }

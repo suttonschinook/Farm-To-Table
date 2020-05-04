@@ -5,8 +5,14 @@ import Container from 'react-bootstrap/Container';
 import styled from 'styled-components';
 
 const StyledContainer = styled.div`
-	height:8vh;
+@media only screen and (max-width:400px){
+	height:2vh;
+}
+@media only screen and (max-width:600px){
+	height:2vh;
+}
 `;
+
 
 const StyledTitle = styled(Link)`
 @media only screen and (max-width:600px){
@@ -20,7 +26,7 @@ const StyledTitle = styled(Link)`
 	font-size: 35x;
 	text-shadow: 1px 1px darkgray;
 	height: 5px;
-	margin-top: -30px;
+	margin:auto;
 }
 @media only screen and (min-width:600px){
 	font-size:50px;
@@ -48,7 +54,7 @@ const StyledFarmer = styled.h2`
 	height: 3px;
 	justify-content: space-around;
 	align-items: center;
-	margin-top: 40px;
+	margin-top: 20px;
 	margin-left: auto;
 	margin-right: auto;
 }
