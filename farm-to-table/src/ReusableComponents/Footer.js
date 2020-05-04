@@ -2,10 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
+const Container = styled.div`
+
+`
 const StyledLink = styled(Link)`
 	color: whitesmoke;
 `;
 const StyledDiv = styled.div`
+@media only screen and (max-width:400px){
 	display: flex;
 	flex: 1;
 	min-height: 40vh;
@@ -15,51 +19,247 @@ const StyledDiv = styled.div`
 	margin: 0;
 	padding: 0;
 	justify-content: space-evenly;
+}
+@media only screen and (max-width:600px){
+	display: flex;
+	flex: 1;
+	min-height: 40vh;
+	flex-direction: column;
+
+	font-family: ’Lato’, sans-serif;
+	margin: 0;
+	padding: 0;
+	justify-content: space-evenly;
+}
+@media only screen and (min-width:600px){
+	display: flex;
+	flex: 1;
+	min-height: 40vh;
+	flex-direction: column;
+
+	font-family: ’Lato’, sans-serif;
+	margin: 0;
+	padding: 0;
+	justify-content: space-evenly;
+}
+@media only screen and (min-width:1000px){
+	display: flex;
+	flex: 1;
+	min-height: 40vh;
+	flex-direction: column;
+
+	font-family: ’Lato’, sans-serif;
+	margin: 0;
+	padding: 0;
+	justify-content: space-evenly;
+}
 `;
 const StyledUl = styled.ul`
+@media only screen and (max-width:400px){
+	font-size:10px;
+	list-style: none;
+	padding-left: 0;
+	margin:auto;
+	margin-left:10%;
+}
+@media only screen and (max-width:600px){
+	font-size:10px;
+	list-style: none;
+	padding-left: 0;
+	margin:auto;
+	margin-left:10%;
+}
+@media only screen and (min-width:600px){
 	color: whitesmoke;
 	list-style: none;
 	padding-left: 0;
+}
+@media only screen and (min-width:1000px){
+	color: whitesmoke;
+	list-style: none;
+	padding-left: 0;
+
+}
 `;
 const StyledFooter = styled.footer`
+@media only screen and (max-width:400px){
+	background-color: #007bff;
+	color: #bbb;
+	line-height: 1.5;
+	margin:auto;
+}
+@media only screen and (max-width:600px){
+	background-color: #007bff;
+	color: #bbb;
+	line-height: 1.5;
+	margin:auto;
+}
+@media only screen and (min-width:600px){
 	background-color: #007bff;
 	height: 40vh;
 	color: #bbb;
 	line-height: 1.5;
+}
+@media only screen and (max-width:1000px){
+	background-color: #007bff;
+	height: 40vh;
+	color: #bbb;
+	line-height: 1.5;
+}
+
 `;
 const StyledFtTitle = styled.h2`
+@media only screen and (max-width:400px){
+	color: #fff;
+	font-family: ’Merriweather’, serif;
+	font-size: 1.100rem;
+	margin-left:5%;
+	margin-top:2%;
+}
+@media only screen and (max-width:600px){
+	color: #fff;
+	font-family: ’Merriweather’, serif;
+	font-size: 1.100rem;
+	margin-left:5%;
+	margin-top:2%;
+}
+@media only scren and (min-width:600px){
 	color: #fff;
 	font-family: ’Merriweather’, serif;
 	font-size: 1.375rem;
 	padding-bottom: 0.625rem;
+}
+@media only screen and (min-width:1000px){
+	color: #fff;
+	font-family: ’Merriweather’, serif;
+	font-size: 1.375rem;
+	padding-bottom: 0.625rem;
+}
+
+
 `;
 const StyledFtMain = styled.footer`
+@media only screen and (max-width:400px){
+	display: flex;
+	flex-wrap: wrap;
+}
+@media only screen and (max-width:600px){
+	display: flex;
+	flex-wrap: wrap;
+}
+@media only screen and (min-width:600px){
 	padding: 1.25rem 1.875rem;
 	display: flex;
 	flex-wrap: wrap;
+}
+@media only screen and (min-width:1000px){
+	padding: 1.25rem 1.875rem;
+	display: flex;
+	flex-wrap: wrap;
+}
 `;
+
 const StyledFtMainItem = styled.footer`
+@media only screen and (max-width:400px){
+	color: whitesmoke;
+	min-width: 7rem /*170px*/;
+}
+@media only screen and (max-width:600px){
+	color: whitesmoke;
+	min-width: 7rem /*170px*/;
+}
+@media only screen and (min-width:600px){
 	color: whitesmoke;
 	padding: 1.25rem;
 	min-width: 12.5rem /*200px*/;
+}
+@media only screen and (min-width:1000px){
+	color: whitesmoke;
+	padding: 1.25rem;
+	min-width: 12.5rem /*200px*/;
+}
 `;
+const StyledUpdate = styled.h2`
+@media only screen and (max-width:400px){
+	font-family: ’Merriweather’, serif;
+	font-size:18px;
+	margin-left:2%;
+	margin-top:2%;
+}
+@media only screen and (max-width:600px){
+	font-family: ’Merriweather’, serif;
+	font-size:18px;
+	margin-left:2%;
+	margin-top:2%;
+}
+@media only screen and (min-width:600px){
+	font-family: ’Merriweather’, serif;
+}
+`
+const StyledNewsLetter = styled.p`
+@media only screen and (max-width:400px){
+	font-family: ’Merriweather’, serif;
+	font-size:10px;
+	margin-left:2%;
+	
+}
+@media only screen and (max-width:600px){
+	font-family: ’Merriweather’, serif;
+	font-size:12px;
+	margin-left:2%;
+	
+}
+
+`
 
 const StyledForm = styled.form`
 	display: flex;
 	flex-wrap: wrap;
+
 `;
 const StyledInputEmail = styled.input`
+@media only screen and (max-width:400px){
 	color: whitesmoke;
 	border: 0;
 	padding: 0.625rem;
 	margin-top: 0.3125rem;
+	height:30px;
+	width:160px;
+	font-size:12px;
+	margin-left:2%;
+}
+@media only screen and (max-width:600px){
+	color: whitesmoke;
+	border: 0;
+	padding: 0.625rem;
+	margin-top: 0.3125rem;
+	height:30px;
+	width:160px;
+	margin-left:2%;
+	
+}
+@media only screen and (min-width:600px){
+	color: whitesmoke;
+	border: 0;
+	padding: 0.625rem;
+	margin-top: 0.3125rem;
+}
+@media only screen and (min-width:1000px){
+	color: whitesmoke;
+	border: 0;
+	padding: 0.625rem;
+	margin-top: 0.3125rem;
+}
 `;
+
 const StyledInputSubmit = styled.input`
+@media only screen and (max-width:400px){
+	font-size:12px;
+}
 	background-color: red;
 	color: whitesmoke;
 	cursor: pointer;
 	border: 0;
-	padding: 0.625rem 0.9375rem;
 	margin-top: 0.3125rem;
 `;
 const StyledFtSocial = styled.footer`
@@ -92,6 +292,7 @@ const StyledFtLegalListLi = styled.li`
 
 export default function Footer() {
 	return (
+		<Container>
 		<StyledDiv>
 			<StyledFooter>
 				<StyledFtMain>
@@ -138,10 +339,10 @@ export default function Footer() {
 						</StyledUl>
 					</StyledFtMainItem>
 					<StyledFtMainItem class='ft-main-item'>
-						<h2>Stay Updated</h2>
-						<p>
+						<StyledUpdate>Stay Updated</StyledUpdate>
+						<StyledNewsLetter>
 							Subscribe to our newsletter to get our latest news.
-						</p>
+						</StyledNewsLetter>
 						<StyledForm>
 							<StyledInputEmail
 								type='email'
@@ -263,5 +464,6 @@ export default function Footer() {
 				</StyledFtLegal>
 			</StyledFooter>
 		</StyledDiv>
+		</Container>
 	);
 }
