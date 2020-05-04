@@ -3,11 +3,56 @@ import Carousel from 'react-bootstrap/Carousel';
 import styled from 'styled-components';
 
 const Container = styled.div`
-	width: 750px;
+@media only screen and (max-width:400px){
+	width: 200px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	margin-top: 3%;
+	margin-bottom: 10%;
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+@media only screen and (max-width:500px){
+	width: 200px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	width: 330px;
+	margin-top: 3%;
+	margin-bottom:10%;
+	margin-left:auto;
+	margin-right:auto;
+
+
+}
+@media only screen and (min-width:600px){
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	width: 600px;
 	margin-top: 3%;
 	margin-bottom: 3%;
-	margin-left: 25%;
-`;
+	margin-left:auto;
+	margin-right:auto;
+
+}
+@media only screen and (min-width:1100px){
+	width:900px;
+}
+`
+const StyledTitle = styled.h1`
+@media only screen and (max-width:500px){
+	font-size:12px;
+}
+@media only screen and (min-width:500px){
+	font-size:20px;
+}
+@media only screen and (min width:1000px){
+	font-size:30px;
+}
+`
 
 export default function Main() {
 	function ControlledCarousel() {
@@ -27,7 +72,7 @@ export default function Main() {
 							alt='First slide'
 						/>
 						<Carousel.Caption>
-							<h1>Sustainable Farms</h1>
+							<StyledTitle>Sustainable Farms</StyledTitle>
 						</Carousel.Caption>
 					</Carousel.Item>
 					<Carousel.Item>
@@ -35,9 +80,9 @@ export default function Main() {
 							className='d-block w-100'
 							src='https://images.unsplash.com/photo-1495570689269-d883b1224443?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1789&q=80'
 							alt='Second slide'
-						/>
+							/>
 						<Carousel.Caption>
-							<h1>Fresh Produce</h1>
+							<StyledTitle>Fresh Produce</StyledTitle>
 						</Carousel.Caption>
 					</Carousel.Item>
 					<Carousel.Item>
@@ -47,11 +92,11 @@ export default function Main() {
 							alt='Third slide'
 						/>
 						<Carousel.Caption>
-							<h1>Locally Sourced</h1>
+							<StyledTitle>Locally Sourced</StyledTitle>
 						</Carousel.Caption>
 					</Carousel.Item>
 				</Carousel>
-			</Container>
+			</Container>		
 		);
 	}
 	return (
