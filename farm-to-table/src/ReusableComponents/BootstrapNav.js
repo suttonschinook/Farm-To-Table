@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import styled from 'styled-components';
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 
 const StyledLink = styled(Link)`
 @media only screen and (max-width:400px){
@@ -10,11 +13,11 @@ const StyledLink = styled(Link)`
 	margin: 0 5px;
 	display:flex;
 	justify-content:space-around;
-	font-size:10px;
+	font-size:7px;
 }
 @media only screen and (max-width:600px){
 	color: whitesmoke;
-	margin: 0 9px;
+	margin: 0 8px;
 	font-size:10px;
 	display:flex;
 	justify-content:space-around;
@@ -28,28 +31,16 @@ const StyledLink = styled(Link)`
 }
 `;
 
-const StyledNavbar = styled.nav`
-@media only screen and (max-width:400px){
-	display:flex;
-	justify-content:center;
-	height:8vh;
-}
-@media only screen and (max-width:600px){
-	display:flex;
-	justify-content:center;
-	height:8vh;
-}
-@media only screen and (min-width:600px){
-	height:10vh;
-}
 
-`
 
 export default function BootstrapNav() {
 	return (
 		<>
-		<StyledNavbar>
-			<Navbar bg='primary' variant='dark'>
+		<Container fluid>
+  <Row>
+    <Col>
+		
+			<Navbar bg='dark' variant='dark'>
 				<Navbar.Brand to='/home'>
 					<img
 						alt=''
@@ -64,7 +55,11 @@ export default function BootstrapNav() {
 					<StyledLink to='/about'>About</StyledLink>
 				</Nav>
 			</Navbar>
-		</StyledNavbar>	
+		
+	</Col>
+  </Row>
+</Container>
 		</>
 	);
 }
+

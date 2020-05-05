@@ -1,18 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Jumbotron from 'react-bootstrap/Jumbotron';
-import Container from 'react-bootstrap/Container';
 import styled from 'styled-components';
-
-const StyledContainer = styled.div`
-@media only screen and (max-width:400px){
-	height:2vh;
-}
-@media only screen and (max-width:600px){
-	height:2vh;
-}
-`;
-
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 
 const StyledTitle = styled(Link)`
 @media only screen and (max-width:600px){
@@ -26,7 +18,7 @@ const StyledTitle = styled(Link)`
 	font-size: 35x;
 	text-shadow: 1px 1px darkgray;
 	height: 5px;
-	margin:auto;
+	margin:auto;margin-top:-5%;
 }
 @media only screen and (min-width:600px){
 	font-size:50px;
@@ -40,7 +32,7 @@ const StyledTitle = styled(Link)`
 	font-size: 35x;
 	text-shadow: 3px 3px darkgray;
 	height: 5px;
-	margin-top: -30px;
+	margin-top: -20px;
 }
 `;
 
@@ -76,17 +68,22 @@ const StyledFarmer = styled.h2`
 
 export default function Header() {
 	return (
+		<Container fluid>
+  <Row>
+    <Col>
 		<Jumbotron fluid>
-			<StyledContainer>
-				<Container>
+				<Container fluid>
 					<StyledTitle to='/' className='header'>
-						Farm2Table
+						Farm to Table
 					</StyledTitle>
 					<StyledFarmer>
 						A virtual farmers market experience
 					</StyledFarmer>
 				</Container>
-			</StyledContainer>
 		</Jumbotron>
+
+	</Col>
+  </Row>
+</Container>
 	);
 }

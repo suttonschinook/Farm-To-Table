@@ -7,22 +7,34 @@ const Container = styled.div`
 	font-size: 25px;
 	margin: 5%;
 `;
+const StyledP = styled.p`
+@media only screen and (max-width:500px){
+	font-size:12px;
+}
+@media only screen and (min-width:500px){
+	font-size:20px;
+}
+@media only screen and (min width:1000px){
+	font-size:30px;
+}
+
+`
 
 export default function Info() {
 	return (
 		<div>
 			<Container>
-				<p>
-					Farm to Table is a place for people to connect with their
+				<StyledP>
+					      Farm to Table is a place for people to connect with their
 					local farmers and get involved in the community. Our farmers
 					offer produce boxes which may vary based on the season and
 					supply.
-				</p>
+				</StyledP>
 
-				<h1>
+				<StyledP>
 					See our calendar below to learn about events happening in
 					the community.
-				</h1>
+				</StyledP>
 			</Container>
 		</div>
 	);
