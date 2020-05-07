@@ -33,7 +33,7 @@ export default function Info() {
 
 				<StyledP>
 					See our calendar below to learn about events happening in
-					the community.
+					the community:
 				</StyledP>
 			</Container>
 		</div>

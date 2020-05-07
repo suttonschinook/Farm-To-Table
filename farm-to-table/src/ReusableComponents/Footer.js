@@ -25,6 +25,7 @@ const StyledUl = styled.ul`
 	margin-left:10%;
 }
 @media only screen and (min-width:600px){
+	font-size:13px;
 	color: whitesmoke;
 	list-style: none;
 	padding-left: 0;
@@ -49,6 +50,9 @@ const StyledFooter = styled.footer`
 }
 @media only screen and (min-width:600px){
 	background-color: #007bff;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:5%;
 }
 @media only screen and (max-width:1000px){
 	background-color: #007bff;
@@ -56,8 +60,8 @@ const StyledFooter = styled.footer`
 	color: #bbb;
 	line-height: 1.5;
 }
-
 `;
+
 const StyledFtTitle = styled.h2`
 @media only screen and (max-width:400px){
 	color: #fff;
@@ -76,8 +80,8 @@ const StyledFtTitle = styled.h2`
 @media only scren and (min-width:600px){
 	color: #fff;
 	font-family: ’Merriweather’, serif;
-	font-size: 1.375rem;
-	padding-bottom: 0.625rem;
+	font-size: 1.150rem;
+	
 }
 @media only screen and (min-width:1000px){
 	color: #fff;
@@ -98,7 +102,6 @@ const StyledFtMain = styled.footer`
 	flex-wrap: wrap;
 }
 @media only screen and (min-width:600px){
-	padding: 1.25rem 1.875rem;
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -121,7 +124,7 @@ const StyledFtMainItem = styled.footer`
 @media only screen and (min-width:600px){
 	color: whitesmoke;
 	padding: 1.25rem;
-	min-width: 12.5rem /*200px*/;
+	min-width: 8rem /*170px*/;
 }
 @media only screen and (min-width:1000px){
 	color: whitesmoke;
@@ -131,11 +134,19 @@ const StyledFtMainItem = styled.footer`
 `;
 const StyledUpdate = styled.h2`
 @media only screen and (max-width:400px){
+	font-family: ’Merriweather’, serif;
 	font-size:18px;
 	margin-left:2%;
 	margin-top:2%;
 }
 @media only screen and (max-width:600px){
+	font-family: ’Merriweather’, serif;
+	font-size:18px;
+	margin-left:2%;
+	margin-top:2%;
+}
+@media only screen and (min-width:600px){
+	font-family: ’Merriweather’, serif;
 	font-size:18px;
 	margin-left:2%;
 	margin-top:2%;
@@ -146,14 +157,16 @@ const StyledUpdate = styled.h2`
 `
 const StyledNewsLetter = styled.p`
 @media only screen and (max-width:400px){
-	font-family: ’Merriweather’, serif;
 	font-size:10px;
 	margin-left:2%;
-	
 }
 @media only screen and (max-width:600px){
-	font-family: ’Merriweather’, serif;
 	font-size:12px;
+	margin-left:2%;
+}
+@media only screen and (min-width:600px){
+	font-family: ’Merriweather’, serif;
+	font-size:15px;
 	margin-left:2%;
 }
 `
@@ -178,6 +191,9 @@ const StyledInputEmail = styled.input`
 }
 @media only screen and (min-width:600px){
 	margin-top: 0.3125rem;
+	height:30px;
+	width:160px;
+	margin-left:2%;
 }
 @media only screen and (min-width:1000px){
 	color: whitesmoke;
@@ -206,13 +222,10 @@ const StyledFtSocialList = styled.footer`
 	padding-top: 1.25rem;
 `;
 
-
-
 const StyledFtSocialListLi = styled.li`
 @media only screen and (max-width:400px){
 	font-size: 1.05rem;
 }
-
 	margin: 0.5rem;
 	font-size: 1.25rem;
 `;
@@ -221,14 +234,15 @@ const StyledFtLegal = styled.footer`
 	padding: 0.9375rem 1.875rem;
 	background-color: #333;
 `;
+
 const StyledFtLegalList = styled.ul`
-@media only screen and (max-width:400px){
+@media only screen and (max-width:600px){
 	font-size:12px;
 }
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
+	color:whitesmoke;
+
 `;
+
 const StyledFtLegalListLi = styled.li`
 	margin: 0.125rem 0.625rem;
 	white-space: nowrap;
