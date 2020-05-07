@@ -7,13 +7,12 @@ import Col from 'react-bootstrap/Col'
 
 const StyledIframe = styled.div`
 @media only screen and (max-width:400px){
-	height:300px;
-	width:300;
+	height:250px;
 }
 @media only screen and (max-width:600px){
 	display:flex;
 	justify-content:center;
-	height:600px;
+	height:500px;
 	margin-top:10%;
 }
 @media only screen and (min-width:600px){
@@ -27,10 +26,10 @@ const StyledIframe = styled.div`
 	justify-content:center;
 	align-items:center;
 	margin-top:5%;
-	width:1000px;
-	height:800px;
 	margin-left:auto;
 	margin-right:auto;
+	height:600px;
+	width:500px;
 }
 `
 
@@ -46,21 +45,21 @@ class MyApp extends Component {
 		return (
 			<div>
 				<Container fluid>
-  <Row>
-    <Col>
+		<Row>
+			<Col>
 				<StyledIframe>
 					<iframe
 						src='https://calendar.google.com/calendar/embed?height=500&amp;wkst=1&amp;bgcolor=%237986CB&amp;ctz=America%2FDenver&amp;src=MWZsbG4yYWFkdG9lZjJqN2Nmcm5tNWNtajBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23E4C441&amp;title=FARM%20TO%20TABLE%20EVENTS&amp;showPrint=0&amp;showTitle=0'
 						frameborder='0'
 						scrolling='no'
 						height = '400px'
-						width = '500px'
+						width = '400px'
 					></iframe>
 				</StyledIframe>
-					</Col>
-					
-  </Row>
-</Container>
+			</Col>
+							
+		</Row>
+				</Container>
 				
 			</div>
 		);

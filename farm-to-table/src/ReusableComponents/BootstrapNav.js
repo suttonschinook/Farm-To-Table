@@ -10,15 +10,15 @@ import Col from 'react-bootstrap/Col'
 const StyledLink = styled(Link)`
 @media only screen and (max-width:400px){
 	color: whitesmoke;
-	margin: 0 5px;
+	margin: 0 6px;
 	display:flex;
 	justify-content:space-around;
-	font-size:7px;
+	font-size:6px;
 }
 @media only screen and (max-width:600px){
 	color: whitesmoke;
-	margin: 0 8px;
-	font-size:10px;
+	margin: 0 7px;
+	font-size:9px;
 	display:flex;
 	justify-content:space-around;
 }
