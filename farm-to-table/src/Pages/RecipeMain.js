@@ -46,6 +46,15 @@ const StyledForm = styled.form`
 `;
 
 const StyledCardDeck = styled(CardDeck)`
+@media only screen and (max-width:400px){
+	display:block;
+	justify-content:center;
+}
+@media only screen and (max-width:600px){
+	display:block;
+	justify-content:center;
+	align-items:center;
+}
 	display: flex;
 	justify-content: center;
 	align-items: center;

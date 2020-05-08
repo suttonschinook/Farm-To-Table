@@ -60,7 +60,7 @@ const StyledFarmer = styled.h2`
 	font-style: italic;
 	justify-content: center;
 	align-items: center;
-	margin-top: 7%;
+	margin-top: 8%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -71,7 +71,7 @@ const StyledFarmer = styled.h2`
 	justify-content: space-around;
 	align-items: center;
 	margin-top: 40px;
-	margin-top: 10%;
+	margin-top: 8%;
 	margin-left:auto;
 	margin-right:auto;
 	font-family: 'Roboto', sans-serif;
