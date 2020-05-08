@@ -26,6 +26,9 @@ const StyledFormContainer = styled.div`
 `;
 
 const StyledTitle = styled.h1`
+@media only screen and (max-width:600px){
+	font-size:20px;
+}
 	display: flex;
 	justify-content: center;
 	align-items: center;

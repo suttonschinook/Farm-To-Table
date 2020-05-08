@@ -1,18 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Jumbotron from 'react-bootstrap/Jumbotron';
-import Container from 'react-bootstrap/Container';
 import styled from 'styled-components';
-
-const StyledContainer = styled.div`
-@media only screen and (max-width:400px){
-	height:2vh;
-}
-@media only screen and (max-width:600px){
-	height:2vh;
-}
-`;
-
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 
 const StyledTitle = styled(Link)`
 @media only screen and (max-width:600px){
@@ -23,13 +15,15 @@ const StyledTitle = styled(Link)`
 	justify-content: space-around;
 	color: rgb(43, 42, 42);
 	font-family: 'Roboto', sans-serif;
-	font-size: 35x;
+	font-size: 26px;
 	text-shadow: 1px 1px darkgray;
 	height: 5px;
 	margin:auto;
+	margin-top:-6%;
+	margin-bottom:2%;
 }
 @media only screen and (min-width:600px){
-	font-size:50px;
+	font-size:30px;
 	display: flex;
 	:hover {
 		text-decoration: none;
@@ -37,10 +31,23 @@ const StyledTitle = styled(Link)`
 	justify-content: space-around;
 	color: rgb(43, 42, 42);
 	font-family: 'Roboto', sans-serif;
-	font-size: 35x;
-	text-shadow: 3px 3px darkgray;
+	text-shadow: 2px 2px darkgray;
 	height: 5px;
-	margin-top: -30px;
+	margin-top: -6%;;
+}
+@media only screen and (min-width:1000px){
+	font-size:40px;
+	display: flex;
+	:hover {
+		text-decoration: none;
+	}
+	justify-content: space-around;
+	color: rgb(43, 42, 42);
+	font-family: 'Roboto', sans-serif;
+	font-size: 55px;
+	text-shadow: 3px 3px darkgray;
+	height: -5px;
+	margin-top:-4%;
 }
 `;
 
@@ -51,42 +58,58 @@ const StyledFarmer = styled.h2`
 	font-family: 'Roboto', sans-serif;
 	font-size: 10px;
 	font-style: italic;
-	height: 3px;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
-	margin-top: 20px;
+	margin-top: 7%;
 	margin-left: auto;
 	margin-right: auto;
 }
 @media only screen and (min-width:600px){
-	display: flex;
-	color: rgb(43, 42, 42);
-	font-family: 'Roboto', sans-serif;
+	display:flex;
 	font-size: 18px;
-	font-style: italic;
 	height: 3px;
 	justify-content: space-around;
 	align-items: center;
 	margin-top: 40px;
+	margin-top: 10%;
+	margin-left:auto;
+	margin-right:auto;
+	font-family: 'Roboto', sans-serif;
+	font-style: italic;
+}
+
+@media only screen and (min-width:1000px){
+	display: flex;
+	color: rgb(43, 42, 42);
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-style: italic;
+	justify-content: space-around;
+	align-items: center;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 10%;
+	margin-top: 6%;
 }
 `;
 
 export default function Header() {
 	return (
+		<Container fluid>
+  <Row>
+    <Col>
 		<Jumbotron fluid>
-			<StyledContainer>
-				<Container>
+				<Container fluid style ={{height:'4vh'}}>
 					<StyledTitle to='/' className='header'>
-						Farm2Table
+						Farm to Table
 					</StyledTitle>
 					<StyledFarmer>
 						A virtual farmers market experience
 					</StyledFarmer>
 				</Container>
-			</StyledContainer>
 		</Jumbotron>
+
+	</Col>
+  </Row>
+</Container>
 	);
 }
