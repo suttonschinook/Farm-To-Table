@@ -33,6 +33,10 @@ const StyledInstructionTitle = styled.h2`
 	font-size: '30px';
 	grid-column: 1/3;
 	grid-row: 3/4;
+	@media only screen and (max-width: 400px) {
+		grid-column: 1/-1;
+		grid-row: 3/4;
+	}
 `;
 const StyledInstructions = styled.h5`
 	display: flex;
@@ -40,6 +44,10 @@ const StyledInstructions = styled.h5`
 	padding: 10px;
 	grid-column: 1/4;
 	grid-row: 4/5;
+	@media only screen and (max-width: 400px) {
+		grid-column: 1/-1;
+		grid-row: 4/5;
+	}
 `;
 
 const StyledIngredients = styled.h3`
@@ -47,6 +55,10 @@ const StyledIngredients = styled.h3`
 	justify-content: center;
 	grid-column: 4/6;
 	grid-row: 3/4;
+	@media only screen and (max-width: 400px) {
+		grid-column: 1/-1;
+		grid-row: 5/6;
+	}
 `;
 
 const StyledUl = styled.ul`
@@ -55,6 +67,10 @@ const StyledUl = styled.ul`
 	text-align: center;
 	grid-column: 4/6;
 	grid-row: 4/5;
+	@media only screen and (max-width: 400px) {
+		grid-column: 1/-1;
+		grid-row: 6/7;
+	}
 `;
 const StyledMealInfo = styled.div``;
 
