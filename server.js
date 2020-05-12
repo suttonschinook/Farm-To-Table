@@ -7,7 +7,7 @@ app.use(express.json());
 app.use(morgan('dev'));
 
 mongoose.connect(
-	mongoose.connect(process.env.MONGODB_URI ||'mongodb://localhost:27017/producedb',
+	process.env.MONGODB_URI || 'mongodb://localhost:27017/producedb',
 	{
 		useNewUrlParser: true,
 		useUnifiedTopology: true,
@@ -38,16 +38,14 @@ app.listen(9000, () => {
 	console.log('The server is running');
 });
 
-// ... other imports 
-const path = require("path")
+// ... other imports
+const path = require('path');
 
-// ... other app.use middleware 
-app.use(express.static(path.join(__dirname, "client", "build")))
+// ... other app.use middleware
+app.use(express.static(path.join(__dirname, 'client', 'build')));
 
 // ...
 // Right before your app.listen(), add this:
-app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+app.get('*', (req, res) => {
+	res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
 });
-
-app.listen(...)
