@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"producedb.produces"}],"uuid":"0d98a60bfe1a429993c8f92e2720a164"}
