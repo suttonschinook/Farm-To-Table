@@ -1,8 +1,10 @@
 const express = require('express');
 const app = express();
+require('dotenv').config();
 const morgan = require('morgan');
 const mongoose = require('mongoose');
 const path = require('path');
+const port = process.env.PORT || 9000;
 
 app.use(express.static(path.join(__dirname, 'client', 'build')));
 
@@ -30,6 +32,6 @@ app.use((err, req, res, next) => {
 	return res.send({ errMsg: err.message });
 });
 
-app.listen(9000, () => {
+app.listen(port, () => {
 	console.log('The server is running');
 });
