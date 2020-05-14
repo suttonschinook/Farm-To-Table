@@ -1,27 +1,32 @@
 {
-  "name": "Farm-To-Table",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "dependencies": {
-    "express": "^4.17.1",
-    "mongoose": "^5.9.10",
-    "morgan": "^1.10.0"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/suttonschinook/Farm-To-Table.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/suttonschinook/Farm-To-Table/issues"
-  },
-  "homepage": "https://github.com/suttonschinook/Farm-To-Table#readme"
+	"name": "farm-to-table",
+	"version": "1.0.0",
+	"description": "",
+	"main": "server.js",
+	"dependencies": {
+		"dotenv": "^8.2.0",
+		"express": "^4.17.1",
+		"mongoose": "^5.9.10",
+		"morgan": "^1.10.0"
+	},
+	"devDependencies": {},
+	"scripts": {
+		"heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node server.js"
+	},
+	"engines": {
+		"node": "12.16.2"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/suttonschinook/Farm-To-Table.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/suttonschinook/Farm-To-Table/issues"
+	},
+	"homepage": "https://github.com/suttonschinook/Farm-To-Table#readme"
 }
