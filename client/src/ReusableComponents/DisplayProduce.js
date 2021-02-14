@@ -13,10 +13,27 @@ const StyledProduce = styled.div`
 	align-items: center;
 `;
 const StyledCardDeck = styled(CardDeck)`
+
+@media only screen and (max-width:600px){
+	display:block;
+	justify-content:center;
+	align-items:center;
+	padding:auto;
+}
+@media only screen and (min-width:600px){
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+
+}
+@media only screen and (min-width:1000px){
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
 `;
+
+
 
 export default function DisplayProduce() {
 	const { produceAvailable } = useContext(InfoContext);

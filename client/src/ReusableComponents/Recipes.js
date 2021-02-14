@@ -4,6 +4,10 @@ import Card from 'react-bootstrap/Card';
 import styled from 'styled-components';
 
 const Container = styled.div`
+
+@media only screen and(max-width:600px){
+	display:block;
+}
 	display: flex;
 `;
 
